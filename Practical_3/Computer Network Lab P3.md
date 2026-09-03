@@ -6,6 +6,10 @@
 
 **Practical: 1**
 
+
+---
+
+
 **1] Bit Stuffing**
 
 **Code:**
@@ -56,6 +60,10 @@ print(f'stuffed bit: {bit_stuffing(data)}')
 
 <img src="./imagesimage1.png"
 style="width:3.60467in;height:1.40645in" />
+
+
+---
+
 
 **2] Character Stuffing**
 
