@@ -58,7 +58,7 @@ print(f'stuffed bit: {bit_stuffing(data)}')
 
 **Output:**
 
-<img src="./imagesimage1.png"
+<img src="./images/image1.png"
 style="width:3.60467in;height:1.40645in" />
 
 
