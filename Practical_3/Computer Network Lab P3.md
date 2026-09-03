@@ -10,7 +10,7 @@
 ---
 
 
-**1] Bit Stuffing**
+# **1] Bit Stuffing**
 
 **Code:**
 
@@ -65,7 +65,7 @@ style="width:3.60467in;height:1.40645in" />
 ---
 
 
-**2] Character Stuffing**
+# **2] Character Stuffing**
 
 **Code:**
 
