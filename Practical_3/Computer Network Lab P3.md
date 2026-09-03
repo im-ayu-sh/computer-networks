@@ -1,16 +1,16 @@
-**Computer Network lab**
+# Computer Network lab
 
-**Name: Ayush Ravindra Patil**
+# Name: Ayush Ravindra Patil
 
-**Date: 27-08-26**
+# Date: 27-08-26
 
-**Practical: 1**
+# Practical: 1
 
 
 ---
 
 
-# **1] Bit Stuffing**
+## 1] Bit Stuffing
 
 **Code:**
 
@@ -65,7 +65,7 @@ style="width:3.60467in;height:1.40645in" />
 ---
 
 
-# **2] Character Stuffing**
+## 2] Character Stuffing
 
 **Code:**
 
