@@ -34,14 +34,16 @@ def bit_stuffing(data):
 
 data = '01111011111101110'
 print(f'Original data: {data}')
-print(f'Stuffed bit: {bit_stuffing(data)}')```
+print(f'Stuffed bit: {bit_stuffing(data)}')
+
+---
 
 **Output:**
 
 <img src="./p3/media/image1.png"
 style="width:3.60467in;height:1.40645in" />
 
-**2\] Character Stuffing**
+## 2] Character Stuffing**
 
 **Code:**
 
@@ -68,7 +70,9 @@ data=input("Enter character frame: ")
 
 print(f'Original Data: {data}')
 
-print(f'Stuffed Data: {character_stuffing(data)}')```
+print(f'Stuffed Data: {character_stuffing(data)}')
+
+---
 
 **Output:**
 
