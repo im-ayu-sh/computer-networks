@@ -2,6 +2,8 @@
 
 **Date: 27-08-26**
 
+**Practical: Network Commands**
+
 **Name: Ayush Ravindra Patil**
 
 **Roll No.: C22**
