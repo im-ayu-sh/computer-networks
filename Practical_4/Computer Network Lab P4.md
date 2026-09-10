@@ -51,7 +51,7 @@ def xor_division(bits, generator):
     return ''.join(data[-(len(gen) - 1):])
 
 # _-_-_ Sender _-_-_
-print("Sender's side")
+print("Sender's Side: ")
 dataword = input("Enter dataword bits: ")    
 generator = input("Enter generator bits: ")
 print("\nDataword :", dataword)
@@ -74,9 +74,9 @@ receiver_remainder = xor_division(received, generator)
 print("Receiver remainder:", receiver_remainder)
 
 if receiver_remainder == '0' * (len(generator) - 1):
-    print("Result: no error detected")
+    print("Result: No Error Detected")
 else:
-    print("Result: error detected")
+    print("Result: Error Detected")
 ```
 
 **3\] Output:**
