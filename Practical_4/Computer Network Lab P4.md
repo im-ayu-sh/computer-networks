@@ -79,9 +79,8 @@ else:
 
 - **If Correct:**
 
-> ![](./images/image1.png){width="5.45in" height="4.832821522309711in"}
+> ![](./images/image1.png)
 
 - **If Incorrect:**
 
-> ![](./images/image2.png){width="5.560047025371828in"
-> height="5.141666666666667in"}
+> ![](./images/image2.png)
