@@ -43,6 +43,7 @@ def xor_division(bits, generator):
             for j in range(len(gen)):
                 data[i + j] = str(int(data[i + j]) ^ int(gen[j]))
     return ''.join(data[-(len(gen) - 1):])
+
 # _-_-_ Sender _-_-_
 print("Sender's side")
 dataword = input("Enter dataword bits: ")    
