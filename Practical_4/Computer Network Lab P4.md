@@ -1,3 +1,13 @@
+<details>
+  <summary><b>✨ Click here to run this code interactively</b></summary>
+  <br>
+  You don't need to install Python on your computer to test this assignment! 
+  
+  I have built a custom Cloudflare web app that lets you edit the code, enter your own binary inputs, and see the bit stuffing output live in your browser.
+  
+  👉 <a href="https://your-project-name.pages.dev"><b>Open the Live Web Compiler</b></a>
+</details>
+
 <div align="right">
   <a href="https://your-project-name.pages.dev">
     <img src="https://img.shields.io/badge/🚀_LAUNCH_LIVE_EDITOR-2EA043?style=for-the-badge&logo=python&logoColor=white" alt="Launch Live Editor">
