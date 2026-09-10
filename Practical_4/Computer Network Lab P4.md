@@ -1,13 +1,5 @@
-
-
 <div align="right">
-  <a href="https://your-project-name.pages.dev">
-    <img src="https://img.shields.io/badge/🚀_LAUNCH_LIVE_EDITOR-2EA043?style=for-the-badge&logo=python&logoColor=white" alt="Launch Live Editor">
-  </a>
-</div>
-
-<div align="right">
-  <a href="https://your-project-name.pages.dev">
+  <a onclick="location.href='https://run-python.pages.dev/';" target="_blank">
     <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
   </a>
 </div>
