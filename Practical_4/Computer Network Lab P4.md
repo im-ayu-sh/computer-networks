@@ -8,7 +8,7 @@
 
 ### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
-**Algorithm:**
+**1\] Algorithm:**
 
 > **Step 1) Start**
 >
