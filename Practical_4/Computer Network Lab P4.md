@@ -1,4 +1,4 @@
-# **Computer Network Lab**
+## **Computer Network Lab**
 
 **Name: Ayush Ravindra Patil**
 
@@ -6,7 +6,7 @@
 
 **Practical: 4**
 
-**<u>Aim: Implementation of Cyclic Redundancy Check (CRC) for error
+### **<u>Aim: Implementation of Cyclic Redundancy Check (CRC) for error
 detection.</u>**
 
 > **\# Algorithm:**
