@@ -4,13 +4,19 @@
   </a>
 </div>
 
-**Computer Network lab**
+## Computer Network Lab 
 
 **Name: Ayush Ravindra Patil**
 
-**Date: 27-08-26**
+**Roll No.: 22**
+
+**Section: C (Batch 2)**
+
+**Date: 10-09-26**
 
 **Practical: 3**
+
+### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
 
 
 ---
