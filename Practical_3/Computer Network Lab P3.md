@@ -6,8 +6,6 @@
 
 ## Computer Network Lab
 
----
-
 **Name: Ayush Ravindra Patil**
 
 **Roll No.: 22**
@@ -20,9 +18,7 @@
 
 ### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
 
-
----
-
+--
 
 ## **1] Bit Stuffing**
 
