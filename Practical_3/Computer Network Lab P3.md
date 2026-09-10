@@ -1,8 +1,3 @@
-<div align="right">
-  <a href="https://run-python.pages.dev/" target="_blank">
-    <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-  </a>
-</div>
 
 ## Computer Network Lab
 
@@ -23,6 +18,11 @@
 ## **1] Bit Stuffing**
 
 **Code:**
+<div align="right">
+  <a href="https://run-python.pages.dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
+  </a>
+</div>
 
 ```python
 def bit_stuffing(data):
@@ -78,6 +78,11 @@ style="width:3.60467in;height:1.40645in" />
 ## **2] Character Stuffing**
 
 **Code:**
+<div align="right">
+  <a href="https://run-python.pages.dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
+  </a>
+</div>
 
 ```python
 def character_stuffing(data):
