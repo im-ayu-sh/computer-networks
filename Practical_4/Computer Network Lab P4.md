@@ -14,17 +14,17 @@
 >
 > **Step 2) Take input dataword and polynomial**
 >
-> **Step 3) Convert the polynomial into bits and calculate the number of redundancy bits (zeros). **
+> **Step 3) Convert the polynomial into bits and calculate the number of redundancy bits (zeros).**
 >
-> **Step 4) Concatenate the dataword and the redundancy bits (zeros) to create the padded dataword. **
+> **Step 4) Concatenate the dataword and the redundancy bits (zeros) to create the padded dataword.**
 >
-> **Step 5) Perform Modulo-2 Division (also known as XOR division) on the sender side with the padded dataword and the divisor. **
+> **Step 5) Perform Modulo-2 Division (also known as XOR division) on the sender side with the padded dataword and the divisor.**
 >
-> **Step 6) Concatenate the resulting remainder at the LSB (Least Significant Bit) with the original dataword to form the codeword. **
+> **Step 6) Concatenate the resulting remainder at the LSB (Least Significant Bit) with the original dataword to form the codeword.**
 >
-> **Step 7) Perform Modulo-2 Division (XOR division) on the receiver side with the received codeword and the divisor. **
+> **Step 7) Perform Modulo-2 Division (XOR division) on the receiver side with the received codeword and the divisor.**
 >
-> **Step 8) If the remainder is 0, then the data is accepted; otherwise, discard the operation (error detected). **
+> **Step 8) If the remainder is 0, then the data is accepted; otherwise, discard the operation (error detected).**
 >
 > **Step 9) Stop**
 
