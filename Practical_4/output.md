@@ -1,0 +1,87 @@
+**Computer Network lab**
+
+**Name: Ayush Ravindra Patil**
+
+**Date: 10-09-26**
+
+**Practical: 4**
+
+**1\] CRC (Cyclic Redunduncy Check):**
+
+> **\# Algorithm:**
+>
+> **Step 1) Start**
+>
+> **Step 2) Take input dataword and polynomial**
+>
+> **Step 3) Convert the polynomial into bits and calculate redunduncy.**
+>
+> **Step 4) Concatenate dataword and redunduncy bits**
+>
+> **Step 5) Perform Modulo -- 2 Division on Sender side with dataword
+> and divisor**
+>
+> **Step 6) Contenate the remainder at LSB with datawords**
+>
+> **Step 7) Perform X-OR division on receiver side with the dataword
+> from sender's result and divisor**
+>
+> **Step 8) If the remainder is 0, then accepted, otherwise discard the
+> operation.**
+>
+> **Step 9) Stop**
+
+**2\] Code:**
+
+```python
+def xor_division(bits, generator):
+    data = list(bits)
+    gen = list(generator)
+    # Loop through the data string up to the point where the generator fits
+    for i in range(len(data) - len(gen) + 1):
+        # In Modulo-2, we only XOR if the leading bit of the current window is '1'
+        if data[i] == '1':
+            for j in range(len(gen)):
+                # Perform XOR logic on the current window of bits
+                data[i + j] = str(int(data[i + j]) ^ int(gen[j]))
+                
+    # Return the remaining bits (the remainder)
+    return ''.join(data[-(len(gen) - 1):])
+  
+print("Sender's side")
+dataword = input("Enter dataword bits: ")    
+generator = input("Enter generator bits: ")
+print("\nDataword :", dataword)
+print("Generator:", generator)
+
+zeros = '0' * (len(generator) - 1)
+padded_data = dataword + zeros
+print("Padded data : ", padded_data)
+
+crc = xor_division(padded_data, generator)
+print("CRC         :", crc)
+
+codeword = dataword + crc
+print('Codeword    :', codeword)
+
+print("\nReceiver's Side:")
+received = input("Enter received bits: ")
+receiver_remainder = xor_division(received, generator)
+print("Receiver remainder:", receiver_remainder)
+
+if receiver_remainder == '0' * (len(generator) - 1):
+    print("Result: no error detected")
+else:
+    print("Result: error detected")
+```
+
+**3\] Output:**
+
+- **If Correct:**
+
+> ![](./images/image1.png){width="5.45in" height="4.832821522309711in"}
+
+- **If Incorrect:**
+
+> ![](./images/image2.png){width="5.560047025371828in"
+> height="5.141666666666667in"}
