@@ -1,4 +1,4 @@
-**<b>Computer Network Lab</b>**
+# **Computer Network Lab**
 
 **Name: Ayush Ravindra Patil**
 
