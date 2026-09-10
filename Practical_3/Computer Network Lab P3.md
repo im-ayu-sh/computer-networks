@@ -123,7 +123,7 @@ style="width:4.22917in;height:1.52083in" />
   <br>
   You don't need to install Python on your computer to test this assignment! 
   
-  I have built a custom Cloudflare web app that lets you edit the code, enter your own binary inputs, and see the output live in your browser.
+  I have built a custom Cloudflare web app that lets you edit the code, enter your own inputs, and see the output live in your browser.
   
   👉 <a href="https://run-python.pages.dev/"><b>Open the Live Web Compiler</b></a>
 </details>
