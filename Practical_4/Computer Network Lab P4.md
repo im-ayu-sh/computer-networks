@@ -1,4 +1,4 @@
-**Computer Network lab**
+**<u>Computer Network Lab</u>**
 
 **Name: Ayush Ravindra Patil**
 
@@ -6,7 +6,7 @@
 
 **Practical: 4**
 
-**1\] CRC (Cyclic Redunduncy Check):**
+**<u>1\] CRC (Cyclic Redunduncy Check):</u>**
 
 > **\# Algorithm:**
 >
