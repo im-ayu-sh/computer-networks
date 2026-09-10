@@ -1,12 +1,4 @@
-<details>
-  <summary><b>✨ Click here to run this code interactively</b></summary>
-  <br>
-  You don't need to install Python on your computer to test this assignment! 
-  
-  I have built a custom Cloudflare web app that lets you edit the code, enter your own binary inputs, and see the bit stuffing output live in your browser.
-  
-  👉 <a href="https://your-project-name.pages.dev"><b>Open the Live Web Compiler</b></a>
-</details>
+
 
 <div align="right">
   <a href="https://your-project-name.pages.dev">
@@ -105,6 +97,13 @@ else:
 
 > ![](./images/image2.png)
 
-<a href="https://run-python.pages.dev/" target="_blank">
-  <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-</a>
+
+<details>
+  <summary><b>✨ Click here to run this code interactively</b></summary>
+  <br>
+  You don't need to install Python on your computer to test this assignment! 
+  
+  I have built a custom Cloudflare web app that lets you edit the code, enter your own binary inputs, and see the bit stuffing output live in your browser.
+  
+  👉 <a href="https://your-project-name.pages.dev"><b>Open the Live Web Compiler</b></a>
+</details>
