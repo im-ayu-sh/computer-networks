@@ -18,7 +18,7 @@
 
 ### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
 
---
+---
 
 ## **1] Bit Stuffing**
 
