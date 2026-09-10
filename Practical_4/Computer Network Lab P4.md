@@ -1,4 +1,4 @@
-## Computer Network Lab _> <a href="YOUR_LINK_HERE" target="_blank"><img src="https://img.shields.io/badge/Run_Code_Online-000000?style=for-the-badge&logo=replit&logoColor=white" alt="Run Code"></a>
+## Computer Network Lab
 
 **Name: Ayush Ravindra Patil**
 
@@ -83,3 +83,4 @@ else:
 
 > ![](./images/image2.png)
 
+<a href="YOUR_LINK_HERE" target="_blank"><img src="https://img.shields.io/badge/Run_Code_Online-000000?style=for-the-badge&logo=replit&logoColor=white" alt="Run Code"></a>
