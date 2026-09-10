@@ -18,6 +18,8 @@
 
 ### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
+
+
 **1\] Algorithm:**
 
 > **Step 1) Start**
@@ -88,6 +90,7 @@ else:
 - **If Incorrect:**
 
 > ![](./images/image2.png)
+
 
 
 <details>
