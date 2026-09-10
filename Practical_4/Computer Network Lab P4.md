@@ -8,8 +8,8 @@
 
 ### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
-> **\# Algorithm:**
->
+**Algorithm:**
+
 > **Step 1) Start**
 >
 > **Step 2) Take input dataword and polynomial**
