@@ -38,17 +38,12 @@
 def xor_division(bits, generator):
     data = list(bits)
     gen = list(generator)
-    # Loop through the data string up to the point where the generator fits
     for i in range(len(data) - len(gen) + 1):
-        # In Modulo-2, we only XOR if the leading bit of the current window is '1'
         if data[i] == '1':
             for j in range(len(gen)):
-                # Perform XOR logic on the current window of bits
                 data[i + j] = str(int(data[i + j]) ^ int(gen[j]))
-                
-    # Return the remaining bits (the remainder)
     return ''.join(data[-(len(gen) - 1):])
-  
+# _-_-_ Sender _-_-_
 print("Sender's side")
 dataword = input("Enter dataword bits: ")    
 generator = input("Enter generator bits: ")
@@ -65,6 +60,7 @@ print("CRC         :", crc)
 codeword = dataword + crc
 print('Codeword    :', codeword)
 
+# _-_-_ Receiver _-_-_
 print("\nReceiver's Side:")
 received = input("Enter received bits: ")
 receiver_remainder = xor_division(received, generator)
