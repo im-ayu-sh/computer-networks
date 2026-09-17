@@ -9,7 +9,7 @@
 
 **Date: 10-09-26**
 
-**Practical: 3**
+**Practical: 5**
 
 ### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
 
