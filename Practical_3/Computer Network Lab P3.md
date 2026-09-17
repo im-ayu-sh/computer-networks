@@ -14,11 +14,6 @@
 
 ---
 
- <div align="right">
-   <a href="https://run-python.pages.dev/bit-stuffing.html" target="_blank">
-     <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-   </a>
- </div>
 
 ## **1] Server (Code)**
 
@@ -60,12 +55,6 @@ style="width:5.22917in" />
 
 ---
 
- <div align="right">
-   <a href="https://run-python.pages.dev/bit-stuffing.html" target="_blank">
-     <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-   </a>
- </div>
-
 ## **2] Client (Code):**
 
 ```python
@@ -98,13 +87,3 @@ client.close()
 <img src="./images/image2.png"
 style="width:5.22917in" />
 
-
-<details>
-  <summary><b>✨ Click here to run this code interactively</b></summary>
-  <br>
-  You don't need to install Python on your computer to test this assignment! 
-  
-  I have built a custom Cloudflare web app that lets you edit the code, enter your own inputs, and see the output live in your browser.
-  
-  👉 <a href="https://run-python.pages.dev/"><b>Open the Live Web Compiler</b></a>
-</details>
