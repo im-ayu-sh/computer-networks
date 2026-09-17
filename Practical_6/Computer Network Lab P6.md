@@ -9,7 +9,7 @@
 
 **Date: 10-09-26**
 
-**Practical: 4**
+**Practical: 6**
 
 ### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
