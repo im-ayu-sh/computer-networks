@@ -1,4 +1,3 @@
-
 ## Computer Network Lab
 
 **Name: Ayush Ravindra Patil**
@@ -7,124 +6,94 @@
 
 **Section: C (Batch 2)**
 
-**Date: 10-09-26**
+**Date: 17-09-26**
 
 **Practical: 3**
 
-### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
+### Aim: Implementation of two-way Client/Server communication using TCP Socket.
 
 ---
-
-## **1] Bit Stuffing**
 
  <div align="right">
    <a href="https://run-python.pages.dev/bit-stuffing.html" target="_blank">
      <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
    </a>
  </div>
- 
-**Code:**
+
+## **1] Server (Code)**
 
 ```python
-def bit_stuffing(data):
 
-    flag = '01111110'
+import socket
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    pattern = '111111'
+server.bind(("127.0.0.1", 8080))
+server.listen(1)
 
-    stuffed_bit='0'
+print("Server is waiting for connection....")
 
-    stuffed_data = ''
+conn, addr = server.accept()
 
-    count=0
+print("Connected with: ", addr)
 
-    for bit in data:
+while True:
+    client_msg = conn.recv(1024).decode()
+    print("Client: ", client_msg)
 
-        if bit=='1':
+    if client_msg.lower() == "exit":
+        break
 
-            count_ones += 1
+    reply = input("Server: ")
+    conn.send(reply.encode())
 
-            stuffed_data += bit
+    if reply.lower() == "exit":
+        break
 
-        else:
-
-            count_ones = 0
-
-            stuffed_data += bit
-
-        if count_ones == 5:
-
-            stuffed_data += stuffed_bit
-
-            count_ones = 0
-
-        return flag + stuffed_data + flag
-
-data = '01111011111101110'
-
-print(f'Original data: {data}')
-
-print(f'stuffed bit: {bit_stuffing(data)}')
+conn.close()
+server.close()
 ```
 
-**Output:**
+### **Output:**
 
 <img src="./images/image1.png"
-style="width:3.60467in;height:1.40645in" />
-
+style="" />
 
 ---
 
-
-## **2] Character Stuffing**
-
  <div align="right">
-   <a href="https://run-python.pages.dev/character-stuffing.html" target="_blank">
+   <a href="https://run-python.pages.dev/bit-stuffing.html" target="_blank">
      <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
    </a>
  </div>
 
-**Code:**
+## **2] Client (Code):**
 
 ```python
-def character_stuffing(data):
 
-    flag = 'F'
+import socket
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    esc = 'E'
+client.connect(("127.0.0.1", 8080))
 
-    stuffed_data = ''
+print("Connected to Server.")
 
-    for char in data:
+while True:
+    message = input("Client: ")
+    client.send(message.encode())
 
-        if char == flag or char == esc:
+    if message.lower() == "exit":
+        break
 
-            stuffed_data += esc
+    reply = client.recv(1024).decode()
+    print("Server: ", reply)
 
-        stuffed_data += char
+    if reply.lower() == "exit":
+        break
 
-    return flag + stuffed_data + flag
-
-data=input("Enter character frame: ")
-
-print(f'Original Data: {data}')
-
-print(f'Stuffed Data: {character_stuffing(data)}')
+client.close()
 ```
 
-**Output:**
+### **Output:**
 
 <img src="./images/image2.png"
-style="width:4.22917in;height:1.52083in" />
-
-
-<details>
-  <summary><b>✨ Click here to run this code interactively</b></summary>
-  <br>
-  You don't need to install Python on your computer to test this assignment! 
-  
-  I have built a custom Cloudflare web app that lets you edit the code, enter your own inputs, and see the output live in your browser.
-  
-  👉 <a href="https://run-python.pages.dev/"><b>Open the Live Web Compiler</b></a>
-</details>
-
+style="" />
