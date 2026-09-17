@@ -97,3 +97,14 @@ client.close()
 
 <img src="./images/image2.png"
 style="" />
+
+
+<details>
+  <summary><b>✨ Click here to run this code interactively</b></summary>
+  <br>
+  You don't need to install Python on your computer to test this assignment! 
+  
+  I have built a custom Cloudflare web app that lets you edit the code, enter your own inputs, and see the output live in your browser.
+  
+  👉 <a href="https://run-python.pages.dev/"><b>Open the Live Web Compiler</b></a>
+</details>
