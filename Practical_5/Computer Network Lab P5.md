@@ -11,7 +11,7 @@
 
 **Practical: 5**
 
-### Aim: Implementation of Bit stuffing and Character stuffing framing techniques.
+### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
 ---
 
@@ -26,45 +26,42 @@
 **Code:**
 
 ```python
-def bit_stuffing(data):
+def xor_division(bits, generator):
+    data = list(bits)
+    gen = list(generator)
+    for i in range(len(data) - len(gen) + 1):
+        if data[i] == '1':
+            for j in range(len(gen)):
+                data[i + j] = str(int(data[i + j]) ^ int(gen[j]))
+    return ''.join(data[-(len(gen) - 1):])
 
-    flag = '01111110'
+# _-_-_ Sender _-_-_
+print("Sender's Side: ")
+dataword = input("Enter dataword bits: ")    
+generator = input("Enter generator bits: ")
+print("\nDataword :", dataword)
+print("Generator:", generator)
 
-    pattern = '111111'
+zeros = '0' * (len(generator) - 1)
+padded_data = dataword + zeros
+print("Padded data : ", padded_data)
 
-    stuffed_bit='0'
+crc = xor_division(padded_data, generator)
+print("CRC         :", crc)
 
-    stuffed_data = ''
+codeword = dataword + crc
+print('Codeword    :', codeword)
 
-    count=0
+# _-_-_ Receiver _-_-_
+print("\nReceiver's Side:")
+received = input("Enter received bits: ")
+receiver_remainder = xor_division(received, generator)
+print("Receiver remainder:", receiver_remainder)
 
-    for bit in data:
-
-        if bit=='1':
-
-            count_ones += 1
-
-            stuffed_data += bit
-
-        else:
-
-            count_ones = 0
-
-            stuffed_data += bit
-
-        if count_ones == 5:
-
-            stuffed_data += stuffed_bit
-
-            count_ones = 0
-
-        return flag + stuffed_data + flag
-
-data = '01111011111101110'
-
-print(f'Original data: {data}')
-
-print(f'stuffed bit: {bit_stuffing(data)}')
+if receiver_remainder == '0' * (len(generator) - 1):
+    print("Result: No Error Detected")
+else:
+    print("Result: Error Detected")
 ```
 
 **Output:**
@@ -79,7 +76,7 @@ style="width:3.60467in;height:1.40645in" />
 ## **2] Character Stuffing**
 
  <div align="right">
-   <a href="https://run-python.pages.dev/character-stuffing.html" target="_blank">
+   <a href="https://run-python.pages.dev/crc.html" target="_blank">
      <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
    </a>
  </div>
