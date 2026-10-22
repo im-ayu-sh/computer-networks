@@ -44,7 +44,7 @@ server.close()
 **Output:**
 
 <img src="./images/image1.png"
-style="width:3.60467in;" />
+style="width:4.60467in;" />
 
 
 ---
@@ -76,4 +76,4 @@ client.close()
 **Output:**
 
 <img src="./images/image2.png"
-style="width:3.60467in;" />
+style="width:4.60467in;" />
