@@ -1,5 +1,5 @@
 
-## Computer Network Lab
+## Computer Network Lab 
 
 **Name: Ayush Ravindra Patil**
 
@@ -9,21 +9,41 @@
 
 **Date: 10-09-26**
 
-**Practical: 5**
+**Practical: 4**
 
 ### Aim: Implementation of Cyclic Redundancy Check (CRC) for error detection.
 
----
 
-## **1] Bit Stuffing**
 
- <div align="right">
-   <a href="https://run-python.pages.dev/crc.html" target="_blank">
-     <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-   </a>
- </div>
- 
-**Code:**
+**1\] Algorithm:**
+
+> **Step 1) Start**
+>
+> **Step 2) Take input dataword and polynomial**
+>
+> **Step 3) Convert the polynomial into bits and calculate the number of redundancy bits (zeros).**
+>
+> **Step 4) Concatenate the dataword and the redundancy bits (zeros) to create the padded dataword.**
+>
+> **Step 5) Perform Modulo-2 Division (also known as XOR division) on the sender side with the padded dataword and the divisor.**
+>
+> **Step 6) Concatenate the resulting remainder at the LSB (Least Significant Bit) with the original dataword to form the codeword.**
+>
+> **Step 7) Perform Modulo-2 Division (XOR division) on the receiver side with the received codeword and the divisor.**
+>
+> **Step 8) If the remainder is 0, then the data is accepted; otherwise, discard the operation (error detected).**
+>
+> **Step 9) Stop**
+
+
+
+<div align="right">
+  <a href="https://run-python.pages.dev/crc.html" target="_blank">
+    <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
+  </a>
+</div>
+
+**2\] Code:**
 
 ```python
 def xor_division(bits, generator):
@@ -64,10 +84,16 @@ else:
     print("Result: Error Detected")
 ```
 
-**Output:**
+**3\] Output:**
 
-<img src="./images/image1.png"
-style="width:3.60467in;height:1.40645in" />
+- **If Correct:**
+
+> ![](./images/image1.png)
+
+- **If Incorrect:**
+
+> ![](./images/image2.png)
+
 
 
 <details>
@@ -75,7 +101,7 @@ style="width:3.60467in;height:1.40645in" />
   <br>
   You don't need to install Python on your computer to test this assignment! 
   
-  I have built a custom Cloudflare web app that lets you edit the code, enter your own inputs, and see the output live in your browser.
+  I have built a custom Cloudflare web app that lets you edit the code, enter your own binary inputs, and see the output live in your browser.
   
   👉 <a href="https://run-python.pages.dev/"><b>Open the Live Web Compiler</b></a>
 </details>
