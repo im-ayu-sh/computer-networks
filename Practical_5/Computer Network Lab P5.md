@@ -18,7 +18,7 @@
 ## **1] Bit Stuffing**
 
  <div align="right">
-   <a href="https://run-python.pages.dev/bit-stuffing.html" target="_blank">
+   <a href="https://run-python.pages.dev/crc.html" target="_blank">
      <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
    </a>
  </div>
@@ -68,51 +68,6 @@ else:
 
 <img src="./images/image1.png"
 style="width:3.60467in;height:1.40645in" />
-
-
----
-
-
-## **2] Character Stuffing**
-
- <div align="right">
-   <a href="https://run-python.pages.dev/crc.html" target="_blank">
-     <img src="https://img.shields.io/badge/Run_in_Live_Editor-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Run Code on My Website">
-   </a>
- </div>
-
-**Code:**
-
-```python
-def character_stuffing(data):
-
-    flag = 'F'
-
-    esc = 'E'
-
-    stuffed_data = ''
-
-    for char in data:
-
-        if char == flag or char == esc:
-
-            stuffed_data += esc
-
-        stuffed_data += char
-
-    return flag + stuffed_data + flag
-
-data=input("Enter character frame: ")
-
-print(f'Original Data: {data}')
-
-print(f'Stuffed Data: {character_stuffing(data)}')
-```
-
-**Output:**
-
-<img src="./images/image2.png"
-style="width:4.22917in;height:1.52083in" />
 
 
 <details>
