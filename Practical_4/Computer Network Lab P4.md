@@ -14,7 +14,7 @@
 
 ---
 
-## **1\] Server Code:**
+### **1\] Server Code:**
 
 ```pythonimport socket
 server=socket.socket(socket.AF_INET ,socket.SOCK_STREAM)
@@ -50,7 +50,7 @@ style="width:3.60467in;" />
 ---
 
 
-## **2\] Client Code:**
+### **2\] Client Code:**
 
 ```python
 import socket
