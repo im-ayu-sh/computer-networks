@@ -107,7 +107,71 @@ style="width:5.22917in" />
 ## **2] Link State Routing (Code):**
 
 ```python
+import heapq
 
+# - Nodes
+nodes = ['X', 'Y', 'Z']
+
+# - initial links
+links = [
+    ('X', 'Y', 1), ('X', 'Z', 5), ('Y', 'Z', 2)
+]
+
+def dijkstra(nodes, graph, source):
+    INF = float('inf')
+    dist = {node: INF for node in nodes}
+    parent = {node: None for node in nodes}
+    dist[source] = 0
+
+    pq = [(0, source)]
+
+    while pq:
+        current_dist, u = heapq.heappop(pq)
+
+        if current_dist > dist[u]:
+            continue
+
+        for v, w in graph[u]:
+            if dist[u] + w < dist[v]:
+                dist[v] = dist[u] + w
+                parent[v] = u
+                heapq.heappush(pq, (dist[v], v))
+
+    return dist, parent
+
+def print_routing_tables(nodes, graph):
+    for source in nodes:
+        dist, parent = dijkstra(nodes, graph, source)
+
+        print(f"\n---------------------------------")
+        print(f"Routing table for node: {source}")
+        print("Dest\tCost\tNextHop")
+        print("---------------------------------")
+
+        for dest in nodes:
+            if dist[dest] == float('inf'):
+                print(f"{dest}\tINF\t-")
+            elif dest == source:
+                print(f"{dest}\t0\t-")
+            else:
+                current = dest
+                
+                while parent[current] is not None and parent[current] != source:
+                    current = parent[current]
+
+                if parent[current] is None:
+                    next_hop = "-"
+                else:
+                    next_hop = current
+                print(f"{dest}\t{dist[dest]}\t{next_hop}")
+
+# Build Link State Database (Adjacency List)
+lsdb = {node: [] for node in nodes}
+for u, v, w in links:
+    lsdb[u].append((v, w))
+    lsdb[v].append((u, w))
+
+print_routing_tables(nodes, lsdb)
 ```
 
 ### **Output:**
